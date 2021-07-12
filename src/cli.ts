@@ -1,4 +1,4 @@
-import { Request } from './api.ts'
+import { Request } from './api'
 import { existsDirSync, existsFileSync } from './fs.ts'
 import { createHtml } from './html.ts'
 import log from './log.ts'
@@ -8,12 +8,10 @@ import util from './util.ts'
 import { version } from '../version.ts'
 
 const commands = {
-  init: 'Create a new ephemeral ',
-  dev: 'Start the app in development mode',
-  start: 'Start the app in production mode',
-  build: 'Build the app to a static site (SSG)',
-  eject: 'Abandon upgrading or fork from create-ewa ecosystem',
-  upgrade: 'Upgrade create-ewa.js command',
+  init: 'Create local transaction storage and configuration for instance.',
+  debug: 'Start server in debug mode',
+  start: 'Start server in production mode',
+  upgrade: 'Upgrade server.js command',
 }
 
 const helpMessage = `create-ewa.js v${version}
