@@ -1,5 +1,15 @@
 {
   "deno.enable": true,
   "deno.lint": true,
-  "deno.unstable": true
+  "deno.unstable": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno",
+  },
+  "deno.suggest.imports.hosts": {
+    "https://deno.land": false
+  },
+  "deno.import_intellisense_autodiscovery": true,
+  "deno.import_intellisense_origins": {
+    "https://deno.land/":true
+  }
 }
